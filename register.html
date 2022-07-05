@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="login" class="d-block text-center">
+    <div class="container input-container w-75 mx-auto  p-5 mt-5">
+      <h1 class="text-center mb-3">Smart Login System</h1>
+      <input id="emailLogin" type="email" class=" bg-transparent form-control mb-3 text-white"
+        placeholder="Enter your Email">
+      <input id="passLogin" type="password" class=" bg-transparent form-control mb-2 text-white"
+        placeholder="Enter your password">
+      <span id="errors" class="text-danger d-none  ">All inputs is required</span>
+      <span id="loginError" class="p-3 text-danger d-none">incorrect email or password</span>
+      <button id="loginBtn" class=" btn btn-outline-info w-100 mt-2">login</button>
+      <p class="text-white text-center mt-3 ">Don’t have an account? <a id="SignUp"
+          class=" text-decoration-none text-white">Sign Up</a></p>
+    </div>
+  </div>
+  <div id="register" class=" d-block d-none">
+
+    <div class="container input-container w-75 mx-auto text-center  p-5 mt-5">
+      <h1 class="text-center mb-3">Smart Login System</h1>
+      <input id="nameInput" type="text" class=" bg-transparent form-control mb-3 text-white"
+        placeholder="Enter your name" required>
+      <input id="emailInput" type="email" class=" bg-transparent form-control mb-3 text-white"
+        placeholder="Enter your email" required>
+      <input id="passInput" type="password" class=" bg-transparent form-control mb-3 text-white"
+        placeholder="Enter your password" required>
+      <span id="error" class="text-danger d-none  ">All inputs is required</span>
+      <span id="Success" class="text-success m-3 d-none">Success</span>
+      <span id="alreadyExists" class="p-3 text-danger d-none ">email already exists</span>
+      <button id="btnSignUp" class=" btn btn-outline-info w-100 mt-3">Sign Up</button>
+      <p class="text-white text-center mt-3  ">You have an account?<a id="SignInBtn"
+          class=" text-decoration-none text-white"> Signin</a></p>
+    </div>
+  </div>
+
+
+
+  <div id="home" class="d-none">
+    <nav class="navbar navbar-expand-lg navbar-dark group">
+      <div class="container">
+          <a class="navbar-brand" href="#">SMART LOGIN</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mt-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link btn btn-outline-warning " id="logOut" >Logout</a>
+                  </li>
+                </ul>
+              </div>
+
+          </div>
+         </nav>
+
+
+    <div class="vh-100 d-flex align-items-center text-center ">
+      <div class="container  input-container  w-75 mx-auto    p-5 mt-5">
+        <h1 id="nameWelcome"></h1>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

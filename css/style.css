@@ -1,0 +1,25 @@
+body{
+	background: #24353f;
+}
+.input-container
+{
+	box-shadow: -5px 2px 54px -9px rgb(0 0 0);
+}
+
+h1
+{
+	color: #17a2b8;
+}
+.navbar{
+	box-shadow: -5px 2px 54px -9px rgb(0 0 0);
+}
+a:hover{
+	text-decoration: underline !important;
+}
+#login button a {
+	color: #17a2b8;
+}
+
+a {
+	cursor: pointer;
+}
